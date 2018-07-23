@@ -5,7 +5,7 @@ var express     =require("express"),
     app=express();
 
 //mongoose.connect("mongodb://localhost:27017/blog_post", {useNewUrlParser: true });
-mongoose.connect("mongodb://blog:deepak123@ds243441.mlab.com:43441/dkblog", {useNewUrlParser: true });
+mongoose.connect("mongodb://<user>:<password>@ds243441.mlab.com:43441/dkblog", {useNewUrlParser: true });
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
